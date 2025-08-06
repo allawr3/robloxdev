@@ -1,0 +1,54 @@
+{
+  "name": "FoodFighter",
+  "tree": {
+    "$className": "DataModel",
+
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "ModuleSetup": { "$path": "src/ServerScripts/ModuleSetup.lua" },
+      "FoodIntegration": { "$path": "src/ServerScripts/FoodIntegration.lua" },
+      "TestScript": { "$path": "src/ServerScripts/TestScript.lua" },
+      "Baseplate": { "$path": "src/ServerScripts/Baseplate.lua" },
+      "TableSetup": { "$path": "src/ServerScripts/TableSetup.lua" },
+      "MatchManager": { "$path": "src/ServerScripts/MatchManager.lua" }
+    },
+
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "FoodThrowing": { "$path": "src/PlayerScripts/FoodThrowing.lua" },
+        "FoodSelection": { "$path": "src/PlayerScripts/FoodSelection.lua" },
+        "CameraControl": { "$path": "src/PlayerScripts/CameraControl.lua" },
+        "UIManager": { "$path": "src/PlayerScripts/UIManager.lua" },
+        "ScreenShake": { "$path": "src/PlayerScripts/ScreenShake.lua" }
+      }
+    },
+
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Modules": {
+        "$path": "src/Modules"
+      },
+      "RemoteEvents": {
+        "$path": "src/RemoteEvents"
+      },
+      "Shared": {
+        "$path": "src/Shared"
+      }
+    },
+    
+    "Lighting": {
+      "$className": "Lighting",
+      "$properties": {
+        "Ambient": [0.2, 0.2, 0.2],
+        "Brightness": 2,
+        "ClockTime": 14,
+        "FogEnd": 1000,
+        "FogStart": 0,
+        "GlobalShadows": true,
+        "OutdoorAmbient": [0.5, 0.5, 0.5]
+      }
+    }
+  }
+} 
